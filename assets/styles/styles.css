@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;700&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 
+html {
+    scroll-padding-top: 72px;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
 .navigation-clean-button {
     font-family: 'Fredoka', sans-serif;
     font-weight: 500;
     background: #FFF;
-    padding-top: .75rem;
-    padding-bottom: .75rem;
     color: #333;
     border-radius: 0;
     box-shadow: none;
@@ -13,54 +17,98 @@
     margin-bottom: 0;
 }
 
-@media (min-width: 768px) {
-    .navigation-clean-button {
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-    }
+.navigation-clean-button .navbar-toggler, .navbar-text .action-button {
+    border-color: #FFF;
+    color: #333;
+    background-color: #FFF;
+    box-shadow: -1px -1px 0 #07ffff, 1px 1px 0 #ff11ff;
 }
 
-.navigation-clean-button .navbar-toggler {
-    border-color: #ddd;
-    color: #888;
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 0.7)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 .navigation-clean-button {
     background-color: #002025;
 }
 
-a.nav-link {
+.nav-link.active {
+    text-shadow: -.7px -.7px 0 #07ffff, .7px .7px 0 #ff11ff;
+}
+
+.navbar-brand {
+    height: 40px;
+    padding: 0;
+}
+
+a.nav-link, a.login {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.login {
+    margin-right: 20px;
+}
+
+a.nav-link:active, a.login:active {
+    color: #FFFFFF;
+    
+}
+
+a.nav-link:hover, a.login:hover {
+    color: #FFFFFF;
+    animation: animacaoHoverTexto 1s linear infinite;
+}
+
+a.nav-link:visited, a.login:visited {
     color: #FFFFFF;
 }
 
-a.nav-link:active {
-    color: #FFFFFF;
+a.action-button {
+    color: #333 !important;
 }
 
-a.nav-link:hover {
-    color: #FFFFFF;
-    animation: animacaoHover 0.5s linear infinite
+a.action-button:hover {
+    animation: animacaoHoverButton 1s linear infinite
 }
 
-a.nav-link:visited {
-    color: #FFFFFF;
-}
-
-@keyframes animacaoHover {
+/* Bloco de animações */
+/* 1. Animação de texto - Glitch Effect */
+@keyframes animacaoHoverTexto {
     0%,100% 
     {
-        text-shadow: -1px -1px 0 #07ffff, 1px 1px 0 #ff11ff; 
+        text-shadow: -.7px -.7px 0 #07ffff, .7px .7px 0 #ff11ff; 
     }
     25%
     {
-        text-shadow: 1px 1px 0 #07ffff, -1px -1px 0 #ff11ff; 
+        text-shadow: .7px .7px 0 #07ffff, -.7px -.7px 0 #ff11ff; 
     }
     50%
     {
-        text-shadow: 1px -1px 0 #07ffff, -1px 1px 0 #ff11ff; 
+        text-shadow: .7px -.7px 0 #07ffff, -.7px .7px 0 #ff11ff; 
     }
     75%
     {
-        text-shadow: -1px 1px 0 #07ffff, 1px -1px 0 #ff11ff; 
+        text-shadow: -.7px .7px 0 #07ffff, .7px -.7px 0 #ff11ff; 
+    }
+}
+
+/* 2. Animação de botão - Glitch Effect */
+@keyframes animacaoHoverButton {
+    0%,100% 
+    {
+        box-shadow: -1px -1px 0 #07ffff, 1px 1px 0 #ff11ff; 
+    }
+    25%
+    {
+        box-shadow: 1px 1px 0 #07ffff, 1px 1px 0 #ff11ff; 
+    }
+    50%
+    {
+        box-shadow: 1px 1px 0 #07ffff, 1px 1px 0 #ff11ff; 
+    }
+    75%
+    {
+        box-shadow: 1px 1px 0 #07ffff, 1px 1px 0 #ff11ff; 
     }
 }
