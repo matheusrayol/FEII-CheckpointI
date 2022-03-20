@@ -17,7 +17,7 @@ html {
     margin-bottom: 0;
 }
 
-.navigation-clean-button .navbar-toggler, .navbar-text .action-button {
+.navigation-clean-button .navbar-toggler, .navbar-text .action-button{
     border-color: #FFF;
     color: #333;
     background-color: #FFF;
@@ -70,6 +70,18 @@ a.action-button {
 
 a.action-button:hover {
     animation: animacaoHoverButton 1s linear infinite
+}
+
+/* Bloco Login */
+
+.btn {
+    background-color: #002025;
+    color: #FFF;
+}
+
+.btn:hover {
+    color: #FFF;
+    box-shadow: -1px -1px 0 #07ffff, 1px 1px 0 #ff11ff;
 }
 
 /* Bloco de animações */
