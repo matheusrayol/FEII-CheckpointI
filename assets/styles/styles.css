@@ -14,6 +14,11 @@ html
 	font-size:16px;
 }
 
+.navigation-clean-button .navbar-toggler, .navbar-text .action-button{
+    border-color: #FFF;
+    color: #333;
+    background-color: #FFF;
+    box-shadow: -1px -1px 0 #07ffff, 1px 1px 0 #ff11ff;
 html,body
 {
 	font-family:'Ubuntu',sans-serif;
@@ -279,6 +284,37 @@ a.nav-link
 	margin:.3rem 0;
 }
 
+/* Bloco Login */
+
+.btn {
+    background-color: #002025;
+    color: #FFF;
+}
+
+.btn:hover {
+    color: #FFF;
+    box-shadow: -1px -1px 0 #07ffff, 1px 1px 0 #ff11ff;
+}
+
+/* Bloco de animações */
+/* 1. Animação de texto - Glitch Effect */
+@keyframes animacaoHoverTexto {
+    0%,100% 
+    {
+        text-shadow: -.7px -.7px 0 #07ffff, .7px .7px 0 #ff11ff; 
+    }
+    25%
+    {
+        text-shadow: .7px .7px 0 #07ffff, -.7px -.7px 0 #ff11ff; 
+    }
+    50%
+    {
+        text-shadow: .7px -.7px 0 #07ffff, -.7px .7px 0 #ff11ff; 
+    }
+    75%
+    {
+        text-shadow: -.7px .7px 0 #07ffff, .7px -.7px 0 #ff11ff; 
+    }
 i.social-dev
 {
 	font-size:1.5rem;

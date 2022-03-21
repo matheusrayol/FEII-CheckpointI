@@ -58,6 +58,28 @@
                 <!-- End: Itens de Navegação -->
             </div>
         </nav>
+        <div class="modal fade" role="dialog" tabindex="-1" id="loginForm">
+            <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down" role="document">
+                <div class="modal-content">
+                    <div class="modal-header"><img src="assets/img/logo.png"><button type="button" class="btn-close"
+                            data-bs-dismiss="modal"></button></div>
+                    <div class="modal-body">
+                        <p>Faça o login para acessar nossos serviços</p>
+                        <form action="login" method="post">
+                            <h2 class="visually-hidden">Formulário de Login</h2>
+                            <div class="illustration"></div>
+                            <div class="mb-3"><input class="form-control" type="email" name="email"
+                                    placeholder="seu@email.com" required=""></div>
+                            <div class="mb-3"><input class="form-control" type="password" name="password"
+                                    placeholder="Senha" required=""></div>
+                            <div class="mb-3"><button class="btn d-block w-100" type="submit">Fazer
+                                    Login</button></div>
+                        </form>
+                    </div>
+                    <div class="modal-footer justify-content-between"><a href="#">Esqueceu sua senha?</a></div>
+                </div>
+            </div>
+        </div>
         <!-- End: Barra de Navegação -->
     </header>
     <!-- End: Cabeçalho/Navegação -->
