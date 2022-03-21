@@ -1,20 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;700&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+@import "https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap";
 
-html {
-    scroll-padding-top: 72px;
-    font-size: 16px;
-    font-family: 'Ubuntu', sans-serif;
+@font-face
+{
+	font-family:'Joystix';
+	src:url(../fonts/joystix_monospace.woff2) format("woff2"),url(../fonts/joystix_monospace.woff) format("woff"),url(../fonts/joystix_monospace.ttf) format("truetype");
+	font-weight:400;
+	font-style:normal;
 }
 
-.navigation-clean-button {
-    font-family: 'Fredoka', sans-serif;
-    font-weight: 500;
-    background: #FFF;
-    color: #333;
-    border-radius: 0;
-    box-shadow: none;
-    border: none;
-    margin-bottom: 0;
+html
+{
+	scroll-padding-top:80px;
+	font-size:16px;
 }
 
 .navigation-clean-button .navbar-toggler, .navbar-text .action-button{
@@ -22,54 +19,269 @@ html {
     color: #333;
     background-color: #FFF;
     box-shadow: -1px -1px 0 #07ffff, 1px 1px 0 #ff11ff;
+html,body
+{
+	font-family:'Ubuntu',sans-serif;
 }
 
-.navbar-dark .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 0.7)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+h1, h2, h3, h4
+{
+	font-family:'Joystix',monospace;
+	text-transform:uppercase;
 }
 
-.navigation-clean-button {
-    background-color: #002025;
+.secao-hero
+{
+	width:100%;
+	height:92vh;
+	background:url(../img/hero_bg.jpg);
+	background-attachment:fixed;
 }
 
-.nav-link.active {
-    text-shadow: -.7px -.7px 0 #07ffff, .7px .7px 0 #ff11ff;
+.secao-hero .text-center h5
+{
+	color:#fff;
 }
 
-.navbar-brand {
-    height: 40px;
-    padding: 0;
+.hero-image
+{
+	width:60vh;
 }
 
-a.nav-link, a.login {
-    color: #FFFFFF;
-    text-decoration: none;
+.secao-hero .text-center h1
+{
+	color:#fff;
+	text-shadow:-.1rem -.1rem 0 #0ff,.1rem .1rem 0 #f0f;
 }
 
-.login {
-    margin-right: 20px;
+.secao-sobre h1
+{
+	text-shadow:-.15rem -.15rem 0 #0ff,.15rem .15rem 0 #f0f;
 }
 
-a.nav-link:active, a.login:active {
-    color: #FFFFFF;
-    
+.secao-hero .text-center h4
+{
+	color:#fff;
+	font-weight:200;
+}
+.secao-cards
+{
+	background-color:#000;
+}
+.secao-cards .container
+{
+	padding:3rem 1rem 0 1rem;
 }
 
-a.nav-link:hover, a.login:hover {
-    color: #FFFFFF;
-    animation: animacaoHoverTexto 1s linear infinite;
+.secao-cards .container h1
+{
+	color: #fff;
+	text-shadow:-2px -2px 0 #0ff,2px 2px 0 #f1f;
+	margin-bottom:2.5rem;
 }
 
-a.nav-link:visited, a.login:visited {
-    color: #FFFFFF;
+.card-footer
+{
+	border: none;
 }
 
-a.action-button {
-    color: #333 !important;
+.card-footer .btn.btn-primary
+{
+	color:#333;
+	background-color:#fff;
+	border-color:#fff;
+	border-radius:.5rem;
+	text-transform:uppercase;
+	font-family:'Joystix',monospace;
+	box-shadow:-2px -2px 0 #0ff, 2px 2px 0 #f1f;
 }
 
-a.action-button:hover {
-    animation: animacaoHoverButton 1s linear infinite
+.secao-cards .container h4
+{
+	text-shadow:-1.5px -1.5px #0ff, 1.5px 1.5px #f1f;
+}
+
+.card
+{
+	border:none;
+	border-radius:none;
+	transition:all .5s ease-in-out;
+	z-index:1000;
+}
+
+.card:hover {
+	box-shadow:-5px -5px 0 #0ff, 5px 5px 0 #f1f;
+}
+
+.navigation-clean-button
+{
+	padding-top:.6rem;
+	padding-bottom:.6rem;
+	border-radius:0;
+	margin-bottom:0;
+	font-family:'Joystix',monospace;
+	font-size:1.2rem;
+}
+
+.navigation-clean-button .navbar-brand:hover
+{
+	color:#222;
+}
+
+.navigation-clean-button .navbar-toggler
+{
+	color:#fff;
+	border-color:#fff;
+	background-color:#fff;
+	box-shadow:-2px -2px 0 #0ff,2px 2px 0 #f1f;
+}
+
+.navigation-clean-button.navbar-light .navbar-nav a.active,.navigation-clean-button.navbar-light .navbar-nav a.active:focus,.navigation-clean-button.navbar-light .navbar-nav a.active:hover
+{
+	color:#8f8f8f;
+	box-shadow:none;
+	background:none;
+	pointer-events:none;
+}
+
+.navigation-clean-button.navbar .navbar-nav .nav-link
+{
+	padding-left:18px;
+	padding-right:18px;
+	letter-spacing:.05rem;
+	transition:text-shadow .5s ease-in-out;
+}
+
+.navigation-clean-button.navbar-light .navbar-nav .nav-link
+{
+	color:#465765;
+}
+
+.navigation-clean-button.navbar-light .navbar-nav .nav-link:focus,.navigation-clean-button.navbar-light .navbar-nav .nav-link:hover
+{
+	color:#37434d!important;
+	background-color:transparent;
+}
+
+.navigation-clean-button .actions .login
+{
+	padding-left:1.1rem;
+	margin-right:1.1rem;
+	text-decoration:none;
+	color:#fff;
+}
+
+.navigation-clean-button .navbar-text .action-button,.navigation-clean-button .navbar-text .action-button:active,.navigation-clean-button .navbar-text .action-button:hover,.navigation-clean-button .navbar-text .action-button:focus
+{
+	background:#fff;
+	border-radius:.5rem;
+	color:#333;
+	border:none;
+	padding:.5rem 1rem;
+	font-size:1.2rem;
+}
+
+.navigation-clean-button .navbar-text .action-button:hover
+{
+	animation:animacaoBotaoNavbar 1s infinite;
+}
+
+a.nav-link
+{
+	color:#fff;
+	transition:text-shadow 1s ease-in-out;
+}
+
+@media (max-width:768px) {
+	.navigation-clean-button
+	{
+		padding-top:.95rem;
+		padding-bottom:.95rem;
+	}
+}
+
+@keyframes animacaoBotaoNavbar {
+	0%,100%
+	{
+		box-shadow:-2px -2px 0 #07ffff,2px 2px 0 #f1f;
+	}
+
+	25%
+	{
+		box-shadow:2px 2px 0 #07ffff,-2px -2px 0 #f1f;
+	}
+
+	50%
+	{
+		box-shadow:2px -2px 0 #07ffff,-2px 2px 0 #f1f;
+	}
+
+	75%
+	{
+		box-shadow:-2px 2px 0 #07ffff,2px -2px 0 #f1f;
+	}
+}
+
+.navbar-brand-img
+{
+	height:40px;
+}
+
+.btn-check:active + .btn-light:focus,.btn-check:checked + .btn-light:focus,.btn-light.active:focus,.btn-light:active:focus,.show > .btn-light.dropdown-toggle:focus
+{
+	box-shadow:none;
+}
+
+.navigation-clean-button .navbar-text .action-button:focus
+{
+	border:none;
+	box-shadow:-2px -2px 0 #0ff,2px 2px 0 #f1f;
+}
+
+.navigation-clean-button .navbar-text .login
+{
+	transition:text-shadow .5s ease-in-out;
+}
+
+.navigation-clean-button .navbar-text .login:hover,.navigation-clean-button .navbar-text .login:focus,.navigation-clean-button .navbar-text .login:active
+{
+	text-shadow:-2px -2px 0 #0ff,2px 2px 0 #f1f;
+}
+
+.navbar-dark .navbar-nav .nav-link
+{
+	color:#fff;
+}
+
+.navigation-clean-button.navbar .navbar-nav .nav-link.active,.navigation-clean-button.navbar .navbar-nav .nav-link:hover,.navigation-clean-button.navbar .navbar-nav .nav-link:focus
+{
+	text-shadow:-2px -2px 0 #0ff,2px 2px 0 #f1f;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus,.navbar-dark .navbar-nav .nav-link:hover
+{
+	color:#fff;
+}
+
+.navbar-dark .navbar-toggler-icon
+{
+	background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0,0,0,0.7)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+#rodape
+{
+	padding:3.125rem 0;
+	color:#000;
+}
+
+#rodape h3
+{
+	text-shadow:-1.5px -1.5px 0 #0ff,1.5px 1.5px 0 #f1f;
+}
+
+#desenvolvedores
+{
+	margin:.3rem 0;
 }
 
 /* Bloco Login */
@@ -103,24 +315,22 @@ a.action-button:hover {
     {
         text-shadow: -.7px .7px 0 #07ffff, .7px -.7px 0 #ff11ff; 
     }
+i.social-dev
+{
+	font-size:1.5rem;
+	color:#fff;
+	background-color:#000;
+	padding:.5rem;
+	border-radius:.5rem;
+	width:2.5rem;
+	height:2.5rem;
+	transition: all .5s ease;
+	margin-right:1rem;
+	margin-top:1rem;
 }
 
-/* 2. Animação de botão - Glitch Effect */
-@keyframes animacaoHoverButton {
-    0%,100% 
-    {
-        box-shadow: -1px -1px 0 #07ffff, 1px 1px 0 #ff11ff; 
-    }
-    25%
-    {
-        box-shadow: 1px 1px 0 #07ffff, 1px 1px 0 #ff11ff; 
-    }
-    50%
-    {
-        box-shadow: 1px 1px 0 #07ffff, 1px 1px 0 #ff11ff; 
-    }
-    75%
-    {
-        box-shadow: 1px 1px 0 #07ffff, 1px 1px 0 #ff11ff; 
-    }
+i.social-dev:hover
+{
+	box-shadow:-2px -2px 0 #0ff,2px 2px 0 #f1f;
+	text-shadow:2px 2px 2px #f1f;
 }
