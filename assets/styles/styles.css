@@ -33,7 +33,6 @@ h1, h2, h3, h4
 	background-attachment:fixed;
 }
 
-
 .secao-hero .text-center h5
 {
 	color:#fff;
@@ -48,6 +47,11 @@ h1, h2, h3, h4
 {
 	color:#fff;
 	text-shadow:-.1rem -.1rem 0 #0ff,.1rem .1rem 0 #f0f;
+}
+
+.secao-sobre h1
+{
+	text-shadow:-.15rem -.15rem 0 #0ff,.15rem .15rem 0 #f0f;
 }
 
 .secao-hero .text-center h4
@@ -257,4 +261,40 @@ a.nav-link
 .navbar-dark .navbar-toggler-icon
 {
 	background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0,0,0,0.7)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+#rodape
+{
+	padding:3.125rem 0;
+	color:#000;
+}
+
+#rodape h3
+{
+	text-shadow:-1.5px -1.5px 0 #0ff,1.5px 1.5px 0 #f1f;
+}
+
+#desenvolvedores
+{
+	margin:.3rem 0;
+}
+
+i.social-dev
+{
+	font-size:1.5rem;
+	color:#fff;
+	background-color:#000;
+	padding:.5rem;
+	border-radius:.5rem;
+	width:2.5rem;
+	height:2.5rem;
+	transition: all .5s ease;
+	margin-right:1rem;
+	margin-top:1rem;
+}
+
+i.social-dev:hover
+{
+	box-shadow:-2px -2px 0 #0ff,2px 2px 0 #f1f;
+	text-shadow:2px 2px 2px #f1f;
 }
