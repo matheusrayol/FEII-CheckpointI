@@ -22,9 +22,9 @@
 
 <body>
     <!-- Start: Cabeçalho/Navegação -->
-    <header id="gg-cabecalho">
+    <header id="cabecalho" class="d-flex flex-column sticky-top">
         <!-- Start: Barra de Navegação -->
-        <nav id="gg-nav"
+        <nav id="navegacao"
             class="navbar navbar-dark navbar-expand-lg sticky-top bg-dark text-uppercase navigation-clean-button">
             <div class="container">
 
@@ -35,29 +35,29 @@
                 <!-- End: Logotipo / Marca -->
 
                 <!-- Start: Acionador Menu Mobile -->
-                <button id="gg-mobilemenu" class="navbar-toggler" data-bs-toggle="collapse"
-                    data-bs-target="#gg-navmenu">
+                <button id="menu-mobile" class="navbar-toggler" data-bs-toggle="collapse"
+                    data-bs-target="#menu-navegacao">
                     <span class="visually-hidden">Navegação</span>
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <!-- End: Acionador Menu Mobile -->
 
                 <!-- Start: Itens de Navegação -->
-                <div id="gg-navmenu" class="collapse navbar-collapse">
+                <div id="menu-navegacao" class="collapse navbar-collapse">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a id="gg-homelink" class="nav-link active" href="index.html">Home</a>
+                            <a id="link-home" class="nav-link active" href="#conteudo">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a id="gg-jogoslink" class="nav-link" href="#gg-jogos">Jogos</a>
+                            <a id="link-jogos" class="nav-link" href="#secao-cards">Jogos</a>
                         </li>
                         <li class="nav-item">
-                            <a id="gg-sobrelink" class="nav-link" href="#gg-sobre">Sobre</a>
+                            <a id="link-sobre" class="nav-link" href="#sobre">Sobre</a>
                         </li>
                     </ul>
                     <span class="navbar-text actions">
-                        <a id="gg-login" class="login" href="#gg-loginmodal">LOGIN</a>
-                        <a id="gg-signup" class="btn action-button" role="button" href="#gg-signupmodal">CADASTRAR</a>
+                        <a id="link-login" class="login" href="#modal-login">LOGIN</a>
+                        <a id="link-signup" class="btn action-button" role="button" href="#modal-signup">CADASTRAR</a>
                     </span>
                 </div>
                 <!-- End: Itens de Navegação -->
@@ -69,161 +69,184 @@
     <!-- End: Cabeçalho/Navegação -->
 
     <!-- Start: Conteúdo do site -->
-    <main id="gg-maincontent" class="d-flex flex-column">
+    <main id="conteudo" class="d-flex flex-column">
 
         <!-- Start: Seção 1 (Hero Banner) -->
-        <section id="gg-sitehero" class="d-flex">
-            <div id="gg-containerhero" class="container-fluid d-flex justify-content-center align-content-center">
-                <div id="gg-herocontent" class="row row-cols-1 justify-content-center align-items-center gap-3">
-                    <div id="gg-herocontent-text" class="text-center col">
-                        <img class="gg-herocontent-img" src="assets/img/gaming_hero.png" alt="Game Geek Hero Banner">
-                        <h1 id="gg-herocontent-title" class="gg-hero">Aperte o play!</h1>
-                        <h4 id="gg-herocontent-subtitle">A sua biblioteca de jogos agora é online.</h4>
+        <section id="secao-hero" class="secao-hero d-flex">
+            <div class="container-fluid d-flex justify-content-center align-content-center gap-3">
+                <div class="row row-cols-1 justify-content-center align-items-center">
+                    <div class="text-center col">
+                        <img class="hero-image" src="assets/img/gaming_hero.png" alt="Game Geek Hero Banner">
+                        <h1>Aperte o play!</h1>
+                        <h5>A sua biblioteca de jogos agora é online.</h5>
                     </div>
                 </div>
             </div>
         </section>
         <!-- End: Seção 1 (Hero Banner) -->
 
-        <!-- Start: Seção de cards -->
-        <section id="gg-sitecards" class="d-flex">
+        <!-- Start: Seção 2 (Cards) -->
+        <section id="secao-cards" class="d-flex secao-cards">
 
-            <!-- Start: Cards Container -->
             <div class="container">
-
-                <!-- Start: Título Seção -->
-                <div class="row row-cols-1 justify-content-center align-items-center gap-3">
-                    <div id="gg-containercards-heading" class="col text-center">
-                        <h1>Jogos cadastrados</h1>
+                <!-- Título da Seção -->
+                <div class="container">
+                    <div class="row row-cols-1 justify-content-center align-items-center">
+                        <div class="col text-center">
+                            <h1>Jogos cadastrados</h1>
+                        </div>
                     </div>
                 </div>
-                <!-- End: Título Seção -->
 
+                <!-- Cards da Seção -->
+                <div class="container pb-5 mb-5">
+                    <div class="row d-flex gy-5 justify-content-center">
 
-                <!-- Start: Container Cartões -->
-                <div id="gg-containercards-cards"
-                    class="row g-0 d-flex justify-content-center align-items-center gap-4">
-
-                    <!-- Start: Card 1 -->
-                    <div id="gg-card-1" class="col-sm-12 col-md-5 col-lg-4 col-xl-3 col-xxl-3">
-                        <div class="card-group">
-                            <div class="card">
-                                <img class="card-img-top w-100 d-block" src="https://loremflickr.com/420/340"
-                                    alt="Card image cap">
-                                <div class="card-body">
-                                    <h4 class="card-title">Título do jogo</h4>
-                                    <h6>Data de lançamento e Plataforma</h6>
-                                    <p class="card-text">Descrição do jogo</p>
+                        <!-- Start: Card 1 -->
+                        <div id="card-1" class="col-sm-12 col-md-10 col-lg-8 col-xl-6 col-xxl-4">
+                            <div class="card text-white bg-dark h-100">
+                                <img src="assets/img/cyberpunk2077.jpg" class="card-img-top" alt="Cyberpunk 2077">
+                                <div class="card-body d-flex flex-column">
+                                    <h4 class="card-title">Cyberpunk 2077</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">PC, PlayStation, Xbox</h6>
+                                        <p class="card-text mb-auto mb-2">Cyberpunk 2077 é um jogo eletrônico de RPG de
+                                            ação
+                                            desenvolvido e publicado pela CD Projekt. Lançado em 10 de dezembro de 2020
+                                            para
+                                            Google Stadia, Microsoft Windows, PlayStation 4 e Xbox One, e previsto para
+                                            2021
+                                            para PlayStation 5 e Xbox Series X/S, sendo que nesses já está disponível
+                                            via
+                                            retrocompatibilidade.
+                                        </p>
+                                        <div class="card-footer mt-4">
+                                            <a href="#" class="btn btn-primary">Remover item</a>
+                                        </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- End: Card 1 -->
+                        <!-- End: Card 1 -->
 
-                    <!-- Start: Card 1 -->
-                    <div id="gg-card-1" class="col-sm-12 col-md-5 col-lg-4 col-xl-3 col-xxl-3">
-                        <div class="card-group">
-                            <div class="card">
-                                <img class="card-img-top w-100 d-block" src="https://loremflickr.com/420/340"
-                                    alt="Card image cap">
-                                <div class="card-body">
-                                    <h4 class="card-title">Título do jogo</h4>
-                                    <h6>Data de lançamento e Plataforma</h6>
-                                    <p class="card-text">Descrição do jogo</p>
+                        <!-- Start: Card 2 -->
+                        <div id="card-2" class="col-sm-12 col-md-10 col-lg-8 col-xl-6 col-xxl-4">
+                            <div class="card text-white bg-dark h-100">
+                                <img src="assets/img/doometernal.jpg" class="card-img-top" alt="DOOM Eternal">
+                                <div class="card-body d-flex flex-column">
+                                    <h4 class="card-title">Doom Eternal</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">PC, PlayStation, Xbox, Nintendo Switch
+                                        </h6>
+                                        <p class="card-text mb-auto mb-2">Doom Eternal é um jogo eletrônico de tiro em
+                                            primeira pessoa desenvolvido pela id Software e publicado pela Bethesda
+                                            Softworks. Foi lançado em 20 de março de 2020 para Google Stadia, Microsoft
+                                            Windows, PlayStation 4 e Xbox One e em 08 de dezembro de 2020 para Nintendo
+                                            Switch.
+                                        </p>
+                                        <div class="card-footer mt-4">
+                                            <a href="#" class="btn btn-primary">Remover item</a>
+                                        </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- End: Card 1 -->
+                        <!-- End: Card 2 -->
 
-                    <!-- Start: Card 2 -->
-                    <div id="gg-card-2" class="col-sm-12 col-md-5 col-lg-4 col-xl-3 col-xxl-3">
-                        <div class="card-group">
-                            <div class="card">
-                                <img class="card-img-top w-100 d-block" src="https://loremflickr.com/420/340"
-                                    alt="Card image cap">
-                                <div class="card-body">
-                                    <h4 class="card-title">Título do jogo</h4>
-                                    <h6>Data de lançamento e Plataforma</h6>
-                                    <p class="card-text">Descrição do jogo</p>
+                        <!-- Start: Card 3 -->
+                        <div id="card-3" class="col-sm-12 col-md-10 col-lg-8 col-xl-6 col-xxl-4">
+                            <div class="card text-white bg-dark h-100">
+                                <img src="assets/img/eldenring.jpg" class="card-img-top" alt="Elden Ring">
+                                <div class="card-body d-flex flex-column">
+                                    <h4 class="card-title">Elden Ring</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">PC, PlayStation, Xbox</h6>
+                                        <p class="card-text mb-auto mb-2">Elden Ring é um jogo eletrônico de RPG de ação
+                                            desenvolvido pela FromSoftware e publicado pela Bandai Namco Entertainment.
+                                            O
+                                            jogo é um projeto colaborativo entre o diretor Hidetaka Miyazaki e o
+                                            romancista
+                                            de fantasia George R. R. Martin.
+                                        </p>
+                                        <div class="card-footer mt-4">
+                                            <a href="#" class="btn btn-primary">Remover item</a>
+                                        </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- End: Card 2 -->
+                        <!-- End: Card 3 -->
 
-                    <!-- Start: Card 3 -->
-                    <div id="gg-card-3" class="col-sm-12 col-md-5 col-lg-4 col-xl-3 col-xxl-3">
-                        <div class="card-group">
-                            <div class="card">
-                                <img class="card-img-top w-100 d-block" src="https://loremflickr.com/420/340"
-                                    alt="Card image cap">
-                                <div class="card-body">
-                                    <h4 class="card-title">Título do jogo</h4>
-                                    <h6>Data de lançamento e Plataforma</h6>
-                                    <p class="card-text">Descrição do jogo</p>
+                        <!-- Start: Card 4 -->
+                        <div id="card-4" class="col-sm-12 col-md-10 col-lg-8 col-xl-6 col-xxl-4">
+                            <div class="card text-white bg-dark h-100">
+                                <img src="assets/img/genshinimpact.jpg" class="card-img-top" alt="Genshin Impact">
+                                <div class="card-body d-flex flex-column">
+                                    <h4 class="card-title">Genshin Impact</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">PC, PlayStation, iOS, Android</h6>
+                                        <p class="card-text mb-auto mb-2">Genshin Impact é um jogo eletrônico RPG de
+                                            ação
+                                            gratuito desenvolvido e publicado pela miHoYo. O jogo apresenta um ambiente
+                                            de
+                                            mundo aberto de fantasia e sistema de batalha baseado em ação.
+                                        </p>
+                                        <div class="card-footer mt-4">
+                                            <a href="#" class="btn btn-primary">Remover item</a>
+                                        </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- End: Card 3 -->
+                        <!-- End: Card 4 -->
 
-                    <!-- Start: Card 4 -->
-                    <div id="gg-card-4" class="col-sm-12 col-md-5 col-lg-4 col-xl-3 col-xxl-3">
-                        <div class="card-group">
-                            <div class="card">
-                                <img class="card-img-top w-100 d-block" src="https://loremflickr.com/420/340"
-                                    alt="Card image cap">
-                                <div class="card-body">
-                                    <h4 class="card-title">Título do jogo</h4>
-                                    <h6>Data de lançamento e Plataforma</h6>
-                                    <p class="card-text">Descrição do jogo</p>
+                        <!-- Start: Card 5 -->
+                        <div id="card-5" class="col-sm-12 col-md-10 col-lg-8 col-xl-6 col-xxl-4">
+                            <div class="card text-white bg-dark h-100">
+                                <img src="assets/img/leagueoflegends.jpg" class="card-img-top" alt="League of Legends">
+                                <div class="card-body d-flex flex-column">
+                                    <h4 class="card-title">League of Legends</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">PC, Mac</h6>
+                                        <p class="card-text mb-auto mb-2">League of Legends é um jogo eletrônico
+                                            multiplayer
+                                            online battle arena desenvolvido e publicado pela Riot Games. Foi lançado em
+                                            outubro de 2009 para Microsoft Windows e em março de 2013 para macOS.
+                                        </p>
+                                        <div class="card-footer mt-4">
+                                            <a href="#" class="btn btn-primary">Remover item</a>
+                                        </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- End: Card 4 -->
+                        <!-- End: Card 5 -->
 
-                    <!-- Start: Card 5 -->
-                    <div id="gg-card-5" class="col-sm-12 col-md-5 col-lg-4 col-xl-3 col-xxl-3">
-                        <div class="card-group">
-                            <div class="card">
-                                <img class="card-img-top w-100 d-block" src="https://loremflickr.com/420/340"
-                                    alt="Card image cap">
-                                <div class="card-body">
-                                    <h4 class="card-title">Título do jogo</h4>
-                                    <h6>Data de lançamento e Plataforma</h6>
-                                    <p class="card-text">Descrição do jogo</p>
+                        <!-- Start: Card 6 -->
+                        <div id="card-6" class="col-sm-12 col-md-10 col-lg-8 col-xl-6 col-xxl-4">
+                            <div class="card text-white bg-dark h-100">
+                                <img src="assets/img/legendsarceus.jpg" class="card-img-top"
+                                    alt="Pokémon Legends: Arceus">
+                                <div class="card-body d-flex flex-column">
+                                    <h4 class="card-title">Pokemon Legends: Arceus</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">Nintendo Switch</h6>
+                                        <p class="card-text mb-auto mb-2">Pokémon Legends: Arceus é um jogo eletrônico
+                                            de
+                                            RPG de ação desenvolvido pela Game Freak e publicado pela The Pokémon
+                                            Company e
+                                            Nintendo. Faz parte da oitava geração da série de jogos eletrônicos Pokémon
+                                            e
+                                            serve como uma prequela para os jogos eletrônicos de RPG do Nintendo DS,
+                                            Pokémon
+                                            Diamond e Pearl, de 2006.
+                                        </p>
+                                        <div class="card-footer mt-4">
+                                            <a href="#" class="btn btn-primary">Remover item</a>
+                                        </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- End: Card 5 -->
+                        <!-- End: Card 5 -->
 
-                    <!-- Start: Card 6 -->
-                    <div id="gg-card-6" class="col-sm-12 col-md-5 col-lg-4 col-xl-3 col-xxl-3">
-                        <div class="card-group">
-                            <div class="card">
-                                <img class="card-img-top w-100 d-block" src="https://loremflickr.com/420/340"
-                                    alt="Card image cap">
-                                <div class="card-body">
-                                    <h4 class="card-title">Título do jogo</h4>
-                                    <h6>Data de lançamento e Plataforma</h6>
-                                    <p class="card-text">Descrição do jogo</p>
-                                </div>
-                            </div>
-                        </div>
                     </div>
-                    <!-- End: Card 6 -->
-
                 </div>
-                <!-- End: Cards -->
 
             </div>
-            <!-- End: Cards Container -->
+
+
+
 
         </section>
-        <!-- End: Seção de cards -->
 
     </main>
 

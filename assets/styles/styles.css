@@ -19,45 +19,89 @@ html,body
 	font-family:'Ubuntu',sans-serif;
 }
 
-.card-group
+h1, h2, h3, h4
 {
-	justify-content:center;
+	font-family:'Joystix',monospace;
+	text-transform:uppercase;
+}
+
+.secao-hero
+{
+	width:100%;
+	height:92vh;
+	background:url(../img/hero_bg.jpg);
+	background-attachment:fixed;
+}
+
+
+.secao-hero .text-center h5
+{
+	color:#fff;
+}
+
+.hero-image
+{
+	width:60vh;
+}
+
+.secao-hero .text-center h1
+{
+	color:#fff;
+	text-shadow:-.1rem -.1rem 0 #0ff,.1rem .1rem 0 #f0f;
+}
+
+.secao-hero .text-center h4
+{
+	color:#fff;
+	font-weight:200;
+}
+.secao-cards
+{
+	background-color:#000;
+}
+.secao-cards .container
+{
+	padding:3rem 1rem 0 1rem;
+}
+
+.secao-cards .container h1
+{
+	color: #fff;
+	text-shadow:-2px -2px 0 #0ff,2px 2px 0 #f1f;
+	margin-bottom:2.5rem;
+}
+
+.card-footer
+{
+	border: none;
+}
+
+.card-footer .btn.btn-primary
+{
+	color:#333;
+	background-color:#fff;
+	border-color:#fff;
+	border-radius:.5rem;
+	text-transform:uppercase;
+	font-family:'Joystix',monospace;
+	box-shadow:-2px -2px 0 #0ff, 2px 2px 0 #f1f;
+}
+
+.secao-cards .container h4
+{
+	text-shadow:-1.5px -1.5px #0ff, 1.5px 1.5px #f1f;
 }
 
 .card
 {
-	border:1px solid #333;
-	max-width:20rem;
-	text-align:justify;
-	transition-property:all;
-	transition-duration:.5s;
-	transition-timing-function:ease;
-}
-
-.card:hover
-{
-	transform:scale(1.1);
-	box-shadow:-5px -5px 0 #0ff,5px 5px 0 #f1f;
+	border:none;
+	border-radius:none;
+	transition:all .5s ease-in-out;
 	z-index:1000;
 }
 
-h4.card-title
-{
-	font-family:'Joystix',monospace;
-	text-transform:uppercase;
-}
-
-#gg-sitecards
-{
-	padding:2.5rem 1rem;
-}
-
-#gg-containercards-heading
-{
-	font-family:'Joystix',monospace;
-	text-shadow:-2px -2px 0 #0ff,2px 2px 0 #f1f;
-	text-transform:uppercase;
-	margin-bottom:2.5rem;
+.card:hover {
+	box-shadow:-5px -5px 0 #0ff, 5px 5px 0 #f1f;
 }
 
 .navigation-clean-button
@@ -213,30 +257,4 @@ a.nav-link
 .navbar-dark .navbar-toggler-icon
 {
 	background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0,0,0,0.7)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-
-#gg-herocontent-title
-{
-	font-family:'Joystix',monospace;
-	color:#fff;
-	text-shadow:-.1rem -.1rem 0 #0ff,.1rem .1rem 0 #f0f;
-	text-transform:uppercase;
-}
-
-#gg-sitehero
-{
-	width:100%;
-	height:92vh;
-	background:url(../img/hero_bg.jpg);
-	background-attachment:fixed;
-}
-
-.gg-herocontent-img
-{
-	width:60vh;
-}
-
-#gg-herocontent-subtitle
-{
-	color:#fff;
 }
