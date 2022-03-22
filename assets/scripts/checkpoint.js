@@ -1,5 +1,6 @@
 let capturaElementoPai = document.getElementById("lista-cards");
 let adicionarCard = document.getElementById("btAdicionar");
+let removerCard = document.getElementsByClassName("selecionado");
 
 function inserirNovoCard() {
 
@@ -59,9 +60,7 @@ adicionarCard.addEventListener("click", function(evento) {
     inserirNovoCard();
 });
 
-function excluirCard() {
 
-}
 
 // Só falta o script pra remover cards \o/
 // Ali do lado no live share tem um item chamado session chat que da pra conversarmos
