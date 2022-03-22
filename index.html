@@ -51,35 +51,15 @@
                         </li>
                     </ul>
                     <span class="navbar-text actions">
-                        <a id="link-login" class="login" href="#modal-login">LOGIN</a>
-                        <a id="link-signup" class="btn action-button" role="button" href="#modal-signup">CADASTRAR</a>
+                        <a id="link-login" class="login" data-bs-toggle="modal" data-bs-target="#modal-login"
+                            href="#modal-login">LOGIN</a>
+                        <a id="link-signup" class="btn action-button" role="button" data-bs-toggle="modal"
+                            data-bs-target="#modal-signup" href="#modal-signup">CADASTRAR</a>
                     </span>
                 </div>
                 <!-- End: Itens de Navegação -->
             </div>
         </nav>
-        <div class="modal fade" role="dialog" tabindex="-1" id="loginForm">
-            <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down" role="document">
-                <div class="modal-content">
-                    <div class="modal-header"><img src="assets/img/logo.png"><button type="button" class="btn-close"
-                            data-bs-dismiss="modal"></button></div>
-                    <div class="modal-body">
-                        <p>Faça o login para acessar nossos serviços</p>
-                        <form action="login" method="post">
-                            <h2 class="visually-hidden">Formulário de Login</h2>
-                            <div class="illustration"></div>
-                            <div class="mb-3"><input class="form-control" type="email" name="email"
-                                    placeholder="seu@email.com" required=""></div>
-                            <div class="mb-3"><input class="form-control" type="password" name="password"
-                                    placeholder="Senha" required=""></div>
-                            <div class="mb-3"><button class="btn d-block w-100" type="submit">Fazer
-                                    Login</button></div>
-                        </form>
-                    </div>
-                    <div class="modal-footer justify-content-between"><a href="#">Esqueceu sua senha?</a></div>
-                </div>
-            </div>
-        </div>
         <!-- End: Barra de Navegação -->
     </header>
     <!-- End: Cabeçalho/Navegação -->
@@ -111,9 +91,43 @@
                 </div>
                 <!-- Start: Cards da Seção -->
                 <div class="container pb-5 mb-5">
-                    <div class="row d-flex gy-5 justify-content-center">
+                    <div id="lista-cards" class="row d-flex gy-5 justify-content-center">
+                        <!-- Start: Card 0 -->
+                        <div id="card" class="col-sm-12 col-md-10 col-lg-8 col-xl-6 col-xxl-4">
+                            <div class="card text-white bg-dark h-100">
+                                <div class="card-body d-flex flex-column">
+                                    <div class="card-title">
+                                        <h4>Cadastre seu jogo</h4>
+                                    </div>
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="inJogo" class="form-label">Nome do jogo</label>
+                                            <input type="text" class="form-control" id="inJogo">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="inPlataforma" class="form-label">Plataformas</label>
+                                            <input type="text" class="form-control" id="inPlataforma">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="inImagem" class="form-label">URL da Imagem</label>
+                                            <input type="text" class="form-control" id="inImagem">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="inDescricao" class="form-label">Descrição do Jogo</label>
+                                            <textarea class="form-control" id="inDescricao" rows="2"></textarea>
+                                        </div>
+                                        <div class="card-footer mt-4 d-flex justify-content-evenly">
+                                            <button type="submit" class="btn btn-primary"
+                                                id="btAdicionar">Cadastrar</button>
+                                            <button type="reset" class="btn btn-primary">Limpar</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End: Card 0 -->
                         <!-- Start: Card 1 -->
-                        <div id="card-1" class="col-sm-12 col-md-10 col-lg-8 col-xl-6 col-xxl-4">
+                        <div id="card" class="col-sm-12 col-md-10 col-lg-8 col-xl-6 col-xxl-4">
                             <div class="card text-white bg-dark h-100">
                                 <img src="assets/img/cyberpunk2077.jpg" class="card-img-top" alt="Cyberpunk 2077">
                                 <div class="card-body d-flex flex-column">
@@ -132,7 +146,7 @@
                         </div>
                         <!-- End: Card 1 -->
                         <!-- Start: Card 2 -->
-                        <div id="card-2" class="col-sm-12 col-md-10 col-lg-8 col-xl-6 col-xxl-4">
+                        <div id="card" class="col-sm-12 col-md-10 col-lg-8 col-xl-6 col-xxl-4">
                             <div class="card text-white bg-dark h-100">
                                 <img src="assets/img/doometernal.jpg" class="card-img-top" alt="DOOM Eternal">
                                 <div class="card-body d-flex flex-column">
@@ -152,7 +166,7 @@
                         </div>
                         <!-- End: Card 2 -->
                         <!-- Start: Card 3 -->
-                        <div id="card-3" class="col-sm-12 col-md-10 col-lg-8 col-xl-6 col-xxl-4">
+                        <div id="card" class="col-sm-12 col-md-10 col-lg-8 col-xl-6 col-xxl-4">
                             <div class="card text-white bg-dark h-100">
                                 <img src="assets/img/eldenring.jpg" class="card-img-top" alt="Elden Ring">
                                 <div class="card-body d-flex flex-column">
@@ -170,7 +184,7 @@
                         </div>
                         <!-- End: Card 3 -->
                         <!-- Start: Card 4 -->
-                        <div id="card-4" class="col-sm-12 col-md-10 col-lg-8 col-xl-6 col-xxl-4">
+                        <div id="card" class="col-sm-12 col-md-10 col-lg-8 col-xl-6 col-xxl-4">
                             <div class="card text-white bg-dark h-100">
                                 <img src="assets/img/genshinimpact.jpg" class="card-img-top" alt="Genshin Impact">
                                 <div class="card-body d-flex flex-column">
@@ -188,7 +202,7 @@
                         </div>
                         <!-- End: Card 4 -->
                         <!-- Start: Card 5 -->
-                        <div id="card-5" class="col-sm-12 col-md-10 col-lg-8 col-xl-6 col-xxl-4">
+                        <div id="card" class="col-sm-12 col-md-10 col-lg-8 col-xl-6 col-xxl-4">
                             <div class="card text-white bg-dark h-100">
                                 <img src="assets/img/leagueoflegends.jpg" class="card-img-top" alt="League of Legends">
                                 <div class="card-body d-flex flex-column">
@@ -198,26 +212,6 @@
                                             multiplayer online battle arena desenvolvido e publicado pela Riot Games.
                                             Foi lançado em outubro de 2009 para Microsoft Windows e em março de 2013
                                             para macOS.</p>
-                                        <div class="card-footer mt-4">
-                                            <a href="#" class="btn btn-primary">Remover item</a>
-                                        </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End: Card 5 -->
-                        <!-- Start: Card 6 -->
-                        <div id="card-6" class="col-sm-12 col-md-10 col-lg-8 col-xl-6 col-xxl-4">
-                            <div class="card text-white bg-dark h-100">
-                                <img src="assets/img/legendsarceus.jpg" class="card-img-top"
-                                    alt="Pokémon Legends: Arceus">
-                                <div class="card-body d-flex flex-column">
-                                    <h4 class="card-title">Pokemon Legends: Arceus</h5>
-                                        <h6 class="card-subtitle mb-2 text-muted">Nintendo Switch</h6>
-                                        <p class="card-text mb-auto mb-2">Pokémon Legends: Arceus é um jogo eletrônico
-                                            de RPG de ação desenvolvido pela Game Freak e publicado pela The Pokémon
-                                            Company e Nintendo. Faz parte da oitava geração da série de jogos
-                                            eletrônicos Pokémon e serve como uma prequela para os jogos eletrônicos de
-                                            RPG do Nintendo DS, Pokémon Diamond e Pearl, de 2006.</p>
                                         <div class="card-footer mt-4">
                                             <a href="#" class="btn btn-primary">Remover item</a>
                                         </div>
@@ -238,8 +232,10 @@
                     <h1 class="display-5 fw-bold text-black mb-5"><strong>Sobre o Projeto</strong></h1>
                     <div class="col-lg-6 mx-auto">
                         <p class="d-grid gap-2 d-sm-flex justify-content-sm-center fs-4">
-                            O Projeto Game Geek foi concebido para a entrega do Checkpoint I da disciplina de Front-End 2,
-                            do curso Certified Tech Developer da Digital House, ministrada pelo professor Marcos Vinícius. A
+                            O Projeto Game Geek foi concebido para a entrega do Checkpoint I da disciplina de Front-End
+                            2,
+                            do curso Certified Tech Developer da Digital House, ministrada pelo professor Marcos
+                            Vinícius. A
                             entrega do Checkpoint I consiste em um site que contenha cards de um tema selecionado pelo
                             grupo, onde é possível adicionar ou remover cards e seus conteúdos através da manipulação de
                             elementos DOM utilizando o JavaScript e conceitos adquiridos em aula.
@@ -255,15 +251,18 @@
     <footer id="rodape" class="bg-dark">
         <div class="container">
             <div class="row justify-content-center align-items-center">
-                <div id="desenvolvedores" class="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 text-center text-sm-center text-md-start text-lg-start text-xl-start text-xxl-start d-flex flex-column align-items-center align-items-sm-center align-items-md-start align-items-lg-start align-items-xl-start align-items-xxl-start item">
+                <div id="desenvolvedores"
+                    class="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 text-center text-sm-center text-md-start text-lg-start text-xl-start text-xxl-start d-flex flex-column align-items-center align-items-sm-center align-items-md-start align-items-lg-start align-items-xl-start align-items-xxl-start item">
                     <h3>Maria Bonifácio</h3>
                     <div class="d-flex redes-sociais">
-                        <a href="#"><i class="fab fa-linkedin-in social-dev"></i></a>
-                        <a href="#"><i class="fab fa-github social-dev"></i></a>
-                        <a href="#"><i class="fab fa-twitter social-dev"></i></a>
+                        <a href="https://www.linkedin.com/in/maria-bonif%C3%A1cio-2aa96b218/"><i
+                                class="fab fa-linkedin-in social-dev"></i></a>
+                        <a href="https://github.com/Mariaboni"><i class="fab fa-github social-dev"></i></a>
+                        <a href="https://twitter.com/kawinskaw"><i class="fab fa-twitter social-dev"></i></a>
                     </div>
                 </div>
-                <div id="desenvolvedores" class="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 text-center text-sm-center text-md-end text-lg-center text-xl-center text-xxl-center d-flex flex-column align-items-center align-items-sm-center align-items-md-end align-items-lg-center align-items-xl-center align-items-xxl-center item">
+                <div id="desenvolvedores"
+                    class="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 text-center text-sm-center text-md-end text-lg-center text-xl-center text-xxl-center d-flex flex-column align-items-center align-items-sm-center align-items-md-end align-items-lg-center align-items-xl-center align-items-xxl-center item">
                     <h3>Matheus Rayol</h3>
                     <div class="d-flex redes-sociais">
                         <a href="https://linkedin.com/in/matheusrayol"><i class="fab fa-linkedin-in social-dev"></i></a>
@@ -271,19 +270,93 @@
                         <a href="https://twitter.com/naosematty"><i class="fab fa-twitter social-dev"></i></a>
                     </div>
                 </div>
-                <div id="desenvolvedores" class="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 text-center text-sm-center text-md-center text-lg-end text-xl-end text-xxl-end d-flex flex-column align-items-center align-items-sm-center align-items-md-center align-items-lg-end align-items-xl-end align-items-xxl-end item">
+                <div id="desenvolvedores"
+                    class="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 text-center text-sm-center text-md-center text-lg-end text-xl-end text-xxl-end d-flex flex-column align-items-center align-items-sm-center align-items-md-center align-items-lg-end align-items-xl-end align-items-xxl-end item">
                     <h3>Tiago Vale</h3>
                     <div class="d-flex redes-sociais">
-                        <a href="https://www.linkedin.com/in/tiago-pereira-do-vale"><i class="fab fa-linkedin-in social-dev"></i></a>
+                        <a href="https://www.linkedin.com/in/tiago-pereira-do-vale"><i
+                                class="fab fa-linkedin-in social-dev"></i></a>
                         <a href="https://github.com/tpvale"><i class="fab fa-github social-dev"></i></a>
                         <a href="https://twitter.com/tpvaale"><i class="fab fa-twitter social-dev"></i></a>
                     </div>
                 </div>
             </div>
-            <p class="pt-5 text-center text-white">&copy; 2022 - Game Geek - <a class="text-white text-decoration-none" href='https://br.freepik.com/fotos-vetores-gratis/social'>Social psd criado por Kerfin7 - br.freepik.com</a></p>
+            <p class="pt-5 text-center text-white">&copy; 2022 - Game Geek - <a class="text-white text-decoration-none"
+                    href='https://br.freepik.com/fotos-vetores-gratis/social'>Social psd criado por Kerfin7 -
+                    br.freepik.com</a></p>
         </div>
     </footer>
     <!-- End: Rodapé -->
+
+    <!-- Start: Modais -->
+    <!-- Modal Login -->
+    <div class="modal fade" id="modal-login" tabindex="-1" aria-labelledby="modal-loginlabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header bg-dark">
+                    <img src="assets/img/logo.png">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Faça o login para acessar nossos serviços</p>
+                    <form action="login" method="post">
+                        <h2 class="visually-hidden">Formulário de Login</h2>
+                        <div class="illustration"></div>
+                        <div class="mb-3">
+                            <input class="form-control" type="email" name="email" placeholder="seu@email.com"
+                                required="">
+                        </div>
+                        <div class="mb-3">
+                            <input class="form-control" type="password" name="password" placeholder="Senha" required="">
+                        </div>
+                        <div class="mb-3">
+                            <button class="btn btn-primary d-block w-100" type="submit">Fazer Login</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer justify-content-between"><a href="#">Esqueceu sua senha?</a></div>
+            </div>
+        </div>
+    </div>
+    <!-- End: Modais -->
+
+    <!-- Modal Cadastro -->
+    <div class="modal fade" id="modal-signup" tabindex="-1" aria-labelledby="modal-signuplabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header bg-dark">
+                    <img src="assets/img/logo.png">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Cadastre-se acessar nossos serviços</p>
+                    <form action="login" method="post">
+                        <h2 class="visually-hidden">Formulário de Login</h2>
+                        <div class="illustration"></div>
+                        <div class="mb-3">
+                            <input class="form-control" type="email" name="email" placeholder="seu@email.com"
+                                required="">
+                        </div>
+                        <div class="mb-3">
+                            <input class="form-control" type="password" name="password" placeholder="Senha" required="">
+                        </div>
+                        <div class="mb-3">
+                            <input class="form-control" type="password" name="passwordconfirm"
+                                placeholder="Confirmar Senha" required="">
+                        </div>
+                        <div class="mb-3">
+                            <button class="btn btn-primary d-block w-100" type="submit">Cadastrar</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer justify-content-between">Já é cadastrado? <a class="login"
+                        data-bs-toggle="modal" data-bs-target="#modal-login" href="#modal-login">Faça o login</a></div>
+            </div>
+        </div>
+    </div>
+    <!-- End: Modais -->
 
     <!-- Scripts Bootstrap 5 -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"

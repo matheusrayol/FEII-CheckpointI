@@ -19,7 +19,8 @@ html
     color: #333;
     background-color: #FFF;
     box-shadow: -1px -1px 0 #07ffff, 1px 1px 0 #ff11ff;
-html,body
+}
+html, body
 {
 	font-family:'Ubuntu',sans-serif;
 }
@@ -85,7 +86,7 @@ h1, h2, h3, h4
 	border: none;
 }
 
-.card-footer .btn.btn-primary
+.card-footer .btn.btn-primary, .card-body .btn.btn-primary
 {
 	color:#333;
 	background-color:#fff;
@@ -315,6 +316,7 @@ a.nav-link
     {
         text-shadow: -.7px .7px 0 #07ffff, .7px -.7px 0 #ff11ff; 
     }
+}
 i.social-dev
 {
 	font-size:1.5rem;
@@ -333,4 +335,19 @@ i.social-dev:hover
 {
 	box-shadow:-2px -2px 0 #0ff,2px 2px 0 #f1f;
 	text-shadow:2px 2px 2px #f1f;
+}
+
+#modal-login .modal-content {
+	box-shadow:-5px -5px 0 #0ff,5px 5px 0 #f1f;
+}
+
+.modal .btn.btn-primary
+{
+	color:#fff;
+	background-color:#333;
+	border-color:#333;
+	border-radius:.5rem;
+	text-transform:uppercase;
+	font-family:'Joystix',monospace;
+	box-shadow:-2px -2px 0 #0ff, 2px 2px 0 #f1f;
 }
