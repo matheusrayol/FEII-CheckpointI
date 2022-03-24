@@ -59,8 +59,3 @@ adicionarCard.addEventListener("click", function(evento) {
     evento.preventDefault();
     inserirNovoCard();
 });
-
-
-
-// Só falta o script pra remover cards \o/
-// Ali do lado no live share tem um item chamado session chat que da pra conversarmos
