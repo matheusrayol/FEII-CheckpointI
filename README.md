@@ -4,7 +4,7 @@ Olá! Este é o repositório do Checkpoint I da disciplina de Front-End II, do c
 
 # Equipe
 
-- [Tiago Vieira](https://github.com/tpvale)
+- [Tiago Vale](https://github.com/tpvale)
 - [Matheus Rayol](https://github.com/matheusrayol)
 - [Maria Bonifácio](https://github.com/mariaboni)
 
