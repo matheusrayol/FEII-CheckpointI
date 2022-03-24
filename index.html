@@ -44,8 +44,7 @@
                         </li>
 					</ul>
                     <span class="navbar-text actions d-flex align-items-center">
-                        <a class="login font-face-gamegeek" data-bs-toggle="modal" data-bs-target="#modal-login" role="button">Login</a>
-                        <a class="btn gamegeek-button font-face-gamegeek text-dark" role="button" data-bs-toggle="modal" data-bs-target="#modal-signup">Cadastrar</a>
+                        <a class="btn gamegeek-button font-face-gamegeek text-dark" role="button" data-bs-toggle="modal" data-bs-target="#modal-cadastro">Cadastrar Jogo</a>
                     </span>
 				</div>
 			</div>
@@ -88,7 +87,7 @@
 				<div class="container pt-5 pb-5 bg-transparent">
 					<div id="lista-cards" class="row d-flex justify-content-center gy-4">
 
-						<div id="card-0" class="col-sm-12 col-md-7 col-lg-6 col-xl-5 col-xxl-4">
+						<div id="card" class="col-sm-12 col-md-7 col-lg-6 col-xl-5 col-xxl-4">
 							<div class="card bg-dark gamegeek-card border-0 h-100">
                                 <img class="card-img-top" src="assets/img/cyberpunk2077.jpg" alt="Cyberpunk 2077">
 								<div class="card-body d-flex flex-column">
@@ -97,12 +96,11 @@
 									<p class="card-text mb-auto text-white">Cyberpunk 2077 é um jogo eletrônico de RPG de ação desenvolvido e publicado pela CD Projekt Red. Lançado em 10 de dezembro de 2020 para Google Stadia, Microsoft Windows, PlayStation 4 e Xbox One, e previsto para 2021 para PlayStation 5 e Xbox Series X/S, sendo que nesses já está disponível via retrocompatibilidade.</p>
 								</div>
 								<div class="card-footer border-0 mb-2">
-                                    <a class="btn gamegeek-button font-face-gamegeek" onclick="removerCard()" role="button">Remover jogo</a>
                                 </div>
 							</div>
 						</div>
 
-						<div id="card-1" class="col-sm-12 col-md-7 col-lg-6 col-xl-5 col-xxl-4">
+						<div id="card" class="col-sm-12 col-md-7 col-lg-6 col-xl-5 col-xxl-4">
 							<div class="card bg-dark gamegeek-card border-0 h-100">
                                 <img class="card-img-top" src="assets/img/doometernal.jpg" alt="DOOM Eternal">
 								<div class="card-body d-flex flex-column">
@@ -111,12 +109,11 @@
 									<p class="card-text mb-auto text-white">Doom Eternal é um jogo eletrônico de tiro em primeira pessoa desenvolvido pela id Software e publicado pela Bethesda Softworks. Foi lançado em 20 de março de 2020 para Google Stadia, Microsoft Windows, PlayStation 4 e Xbox One e em 08 de dezembro de 2020 para Nintendo Switch.</p>
 								</div>
 								<div class="card-footer border-0 mb-2">
-                                    <a class="btn gamegeek-button font-face-gamegeek" onclick="removerCard()" role="button">Remover jogo</a>
                                 </div>
 							</div>
 						</div>
 
-						<div id="card-2" class="col-sm-12 col-md-7 col-lg-6 col-xl-5 col-xxl-4">
+						<div id="card" class="col-sm-12 col-md-7 col-lg-6 col-xl-5 col-xxl-4">
 							<div class="card bg-dark gamegeek-card border-0 h-100">
                                 <img class="card-img-top" src="assets/img/eldenring.jpg" alt="Elden Ring">
 								<div class="card-body d-flex flex-column">
@@ -125,12 +122,11 @@
 									<p class="card-text mb-auto text-white">Elden Ring é um jogo eletrônico de RPG de ação desenvolvido pela FromSoftware e publicado pela Bandai Namco Entertainment. O jogo é um projeto colaborativo entre o diretor Hidetaka Miyazaki e o romancista de fantasia George R. R. Martin.</p>
 								</div>
 								<div class="card-footer border-0 mb-2">
-                                    <a class="btn gamegeek-button font-face-gamegeek" onclick="removerCard()" role="button">Remover jogo</a>
                                 </div>
 							</div>
 						</div>
 
-						<div id="card-3" class="col-sm-12 col-md-7 col-lg-6 col-xl-5 col-xxl-4">
+						<div id="card" class="col-sm-12 col-md-7 col-lg-6 col-xl-5 col-xxl-4">
 							<div class="card bg-dark gamegeek-card border-0 h-100">
                                 <img class="card-img-top" src="assets/img/genshinimpact.jpg" alt="Genshin Impact">
 								<div class="card-body d-flex flex-column">
@@ -139,12 +135,11 @@
 									<p class="card-text mb-auto text-white">Genshin Impact é um jogo eletrônico RPG de ação gratuito desenvolvido e publicado pela miHoYo. O jogo apresenta um ambiente de mundo aberto de fantasia e sistema de batalha baseado em ação.</p>
 								</div>
 								<div class="card-footer border-0 mb-2">
-                                    <a class="btn gamegeek-button font-face-gamegeek" onclick="removerCard()" role="button">Remover jogo</a>
                                 </div>
 							</div>
 						</div>
 
-						<div id="card-4" class="col-sm-12 col-md-7 col-lg-6 col-xl-5 col-xxl-4">
+						<div id="card" class="col-sm-12 col-md-7 col-lg-6 col-xl-5 col-xxl-4">
 							<div class="card bg-dark gamegeek-card border-0 h-100">
                                 <img class="card-img-top" src="assets/img/leagueoflegends.jpg" alt="League of Legends">
 								<div class="card-body d-flex flex-column">
@@ -152,11 +147,12 @@
 									<h6 class="card-subtitle text-muted mb-2">PC, Mac</h6>
 									<p class="card-text mb-auto text-white">Cyberpunk 2077 é um jogo eletrônico de RPG de ação desenvolvido e publicado pela CD Projekt Red. Lançado em 10 de dezembro de 2020 para Google Stadia, Microsoft Windows, PlayStation 4 e Xbox One, e previsto para 2021 para PlayStation 5 e Xbox Series X/S, sendo que nesses já está disponível via retrocompatibilidade.</p>
 								</div>
-								<div class="card-footer border-0 mb-2"><a class="btn gamegeek-button font-face-gamegeek" onclick="removerCard()" role="button">Remover jogo</a></div>
+								<div class="card-footer border-0 mb-2">
+                                </div>
 							</div>
 						</div>
 
-						<div id="card-5" class="col-sm-12 col-md-7 col-lg-6 col-xl-5 col-xxl-4">
+						<div id="card" class="col-sm-12 col-md-7 col-lg-6 col-xl-5 col-xxl-4">
 							<div class="card bg-dark gamegeek-card border-0 h-100">
                                 <img class="card-img-top" src="assets/img/legendsarceus.jpg" alt="Pokémon Legends Arceus">
 								<div class="card-body d-flex flex-column">
@@ -165,7 +161,6 @@
 									<p class="card-text mb-auto text-white">Pokémon Legends: Arceus é um jogo eletrônico de RPG de ação desenvolvido pela Game Freak e publicado pela The Pokémon Company e Nintendo. Faz parte da oitava geração da série de jogos eletrônicos Pokémon e serve como uma prequela para os jogos eletrônicos de RPG do Nintendo DS, Pokémon Diamond e Pearl, de 2006.</p>
 								</div>
 								<div class="card-footer border-0 mb-2">
-                                    <a class="btn gamegeek-button font-face-gamegeek" onclick="removerCard()" role="button">Remover jogo</a>
                                 </div>
 							</div>
 						</div>
@@ -253,66 +248,45 @@
 	</footer>
 	<!-- End: Rodapé do Site -->
 
-	<!-- Start: Modais -->
-	<div class="modal fade" id="modal-login" tabindex="-1" aria-labelledby="modal-loginlabel" aria-hidden="true">
+	<!-- Start: Modal Cadastro -->
+	<div class="modal fade" id="modal-cadastro" tabindex="-1" aria-labelledby="modal-signuplabel" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
 			<div class="modal-content">
 				<div class="modal-header bg-dark"> 
                     <img src="assets/img/logo.png" alt="Game Geek">
-					<button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <span class="font-face-gamegeek text-white ms-5">Cadastro de jogo</span>
+					<button id="toggleMyModal" type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
 				<div class="modal-body">
-					<p>Faça o login para acessar nossos serviços</p>
-					<form action="login" method="post">
-						<h2 class="visually-hidden">Formulário de Login</h2>
+					<form>
 						<div class="mb-3">
-							<input class="form-control" type="email" name="email" placeholder="seu@email.com" required="">
+                            <label for="inJogo" class="form-label">Nome do Jogo</label>
+							<input type="text" class="form-control" id="inJogo">
                         </div>
 						<div class="mb-3">
-							<input class="form-control" type="password" name="password" placeholder="Senha" required="">
+                            <label for="inPlataforma" class="form-label">Plataformas Suportadas</label>
+                            <input type="text" class="form-control" id="inPlataforma">
                         </div>
 						<div class="mb-3">
-							<button class="btn gamegeek-button font-face-gamegeek text-white bg-dark" type="submit">Fazer Login</button>
+							<label for="inImagem" class="form-label">URL da Imagem</label>
+                            <input type="text" class="form-control" id="inImagem">
+                        </div>
+                        <div class="mb-3">
+                            <label for="inDescricao" class="form-label">Descrição</label>
+                            <textarea class="form-control" id="inDescricao" rows="5"></textarea>
+                        </div>
+						<div class="mb-3">
+							<button class="btn gamegeek-button font-face-gamegeek text-white bg-dark me-3" type="submit" id="btAdicionar">Cadastrar</button>
+                            <button class="btn gamegeek-button font-face-gamegeek text-white bg-dark" type="reset" id="btAdicionar">Limpar</button>
 						</div>
 					</form>
 				</div>
-				<div class="modal-footer justify-content-between bg-dark">
-                    <a class="text-white text-decoration-none" href="#">Esqueceu sua senha?</a>
+				<div class="modal-footer justify-content-between bg-dark pb-5">
                 </div>
 			</div>
 		</div>
 	</div>
-
-	<div class="modal fade" id="modal-signup" tabindex="-1" aria-labelledby="modal-signuplabel" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
-			<div class="modal-content">
-				<div class="modal-header bg-dark"> 
-                    <img src="assets/img/logo.png" alt="Game Geek">
-					<button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-				</div>
-				<div class="modal-body">
-					<p>Cadastre-se para acessar os nossos serviços</p>
-					<form action="login" method="post">
-						<h2 class="visually-hidden">Formulário de Registro</h2>
-						<div class="mb-3">
-							<input class="form-control" type="email" name="email" placeholder="seu@email.com" required="">
-                        </div>
-						<div class="mb-3">
-							<input class="form-control" type="password" name="password" placeholder="Senha" required="">
-                        </div>
-						<div class="mb-3">
-							<input class="form-control" type="password" name="passwordconfirm" placeholder="Confirmar Senha" required="">
-                        </div>
-						<div class="mb-3">
-							<button class="btn gamegeek-button font-face-gamegeek text-white bg-dark" type="submit">Cadastrar</button>
-						</div>
-					</form>
-				</div>
-				<div class="modal-footer justify-content-between bg-dark"><p class="text-white">Já é cadastrado? <a class="text-decoration-none text-white" data-bs-toggle="modal" data-bs-target="#modal-login" href="#modal-login">Faça o login</a></p></div>
-			</div>
-		</div>
-	</div>
-	<!-- End: Modais -->
+	<!-- End: Modal Cadastro -->
 
 	<!-- Start: Scripts-->
 	<!-- Script Bootstrap 5 -->
